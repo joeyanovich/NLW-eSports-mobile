@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Image } from 'react-native';
 
 import logoImg from '../../assets/logo-nlw-esports.png'
+import { Heading } from '../../components/Heading';
 
 import { styles } from './styles';
 
@@ -11,7 +12,12 @@ export function Home() {
       <Image
         source={logoImg}
         style={styles.logo}
-      />  
+      />
+
+      <Heading
+        title="Encontre seu duo!"
+        subtitle="Selecione o jogo que deseja jogar..."
+      />
     </View>
   );
 }
